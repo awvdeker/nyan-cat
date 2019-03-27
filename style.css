@@ -2,3 +2,19 @@ button{
   display: block;
   margin: 200px auto 200px auto;
 }
+
+/*
+.nyan-cat{
+  postion: fixed;
+  transition: all 3s ease;
+}
+
+.nyan-cat-start{
+  left:0;
+  top:0;
+}
+.nyan-cat-end{
+  left: 100vw;
+  top:  100vh;
+}
+*/
