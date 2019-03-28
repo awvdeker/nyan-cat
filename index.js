@@ -4,17 +4,16 @@ knop.addEventListener("click",catRain);
 
 function catRain () {
 
-
   //setInterval om de 1 seconde een katje maken
 
-
-  oneCat();
-
+  var herhaling = setInterval(oneCat,1000);
 
   //setTimeout zet op 10 seconden,
   //en opdracht: clearInterval
 
-
+  setTimeout(function(){
+    clearInterval(herhaling);
+  },10000);
 
 }
 
@@ -29,7 +28,7 @@ function oneCat () {
 
     kat.style.left = "0";
       kat.style.top = "0";
-      kat.style.transition = "all 1s linear";
+      kat.style.transition = "all 2s linear";
 
 
     setTimeout(function(){
