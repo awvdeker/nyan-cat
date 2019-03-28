@@ -59,7 +59,9 @@ function oneCat () {
 
   kat.style.left = "0";
   kat.style.top = "0";
-  kat.style.transition = "all 2s linear";
+
+  var time=Math.random()*5;
+  kat.style.transition = "all "+time+"s linear";
 
 
   setTimeout(function(){
@@ -72,7 +74,7 @@ function oneCat () {
 
   setTimeout(function(){
     kat.parentNode.removeChild(kat);
-  }, 2000);
+  }, time*1000);
 
 }
 
