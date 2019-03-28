@@ -69,6 +69,11 @@ function oneCat () {
 
   }, 100);
 
+
+  setTimeout(function(){
+    kat.parentNode.removeChild(kat);
+  }, 2000);
+
 }
 
 //als speciale achtergrond neem animated
