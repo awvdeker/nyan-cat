@@ -12,6 +12,18 @@ function catRain () {
 
   document.getElementById("knop").style.display="none";
 
+  //audio
+  //var deuntje = new Audio("https://archive.org/download/nyannyannyan/NyanCatoriginal.ogg");
+  var deuntje = new Audio("NyanCatoriginal.ogg");
+  //var deuntje = new Audio("nyancat.mp3");
+  //deuntje.src = "nyancat.mp3";
+
+  //var deuntje=document.getElementById("geluid");
+console.log(deuntje);
+
+  deuntje.play();
+
+
 
   //setInterval om de 1 seconde een katje maken
 
@@ -29,7 +41,8 @@ function catRain () {
 
   document.getElementById("knop").style.display="block";
 
-
+  //audio stopt
+  deuntje.pause();
 
   },10000);
 
