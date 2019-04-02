@@ -57,7 +57,10 @@ function oneCat () {
 
   kat.style.position = "fixed";
 
-  kat.style.left = "0";
+  var horizontalPosition=Math.random()*50;
+
+
+  kat.style.left = horizontalPosition+"vw";
   kat.style.top = "0";
 
   var time=Math.random()*5;
