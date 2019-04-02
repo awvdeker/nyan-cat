@@ -27,7 +27,7 @@ console.log(deuntje);
 
   //setInterval om de 1 seconde een katje maken
 
-  var herhaling = setInterval(oneCat,1000);
+  var herhaling = setInterval(moreCats,1000);
 
   //setTimeout zet op 10 seconden,
   //en opdracht: clearInterval
@@ -47,6 +47,14 @@ console.log(deuntje);
   },10000);
 
 }
+
+function moreCats (){
+  var amountOfCats = Math.floor(Math.random()*10);
+  for(i=1;i<=amountOfCats;i++){
+    oneCat ();
+  }
+}
+
 
 function oneCat () {
   var kat=document.createElement("img");
